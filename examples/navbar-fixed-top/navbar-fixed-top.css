@@ -1,0 +1,11 @@
+
+body {
+  min-height: 2000px;
+  padding-top: 70px;
+  background: #000;
+  color: #fff;
+}
+/*misc*/
+*{
+	/*border: 1px dotted red !important;*/
+}
