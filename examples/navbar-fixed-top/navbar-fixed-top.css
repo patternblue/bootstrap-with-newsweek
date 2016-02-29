@@ -2,10 +2,165 @@
 body {
   min-height: 2000px;
   padding-top: 70px;
-  background: #000;
-  color: #fff;
+  background: #fff;
+  /*color: #222;*/
 }
 /*misc*/
 *{
 	/*border: 1px dotted red !important;*/
+}
+
+.navbar-header{
+	/*background: #f00;*/
+	margin: 0 0;
+	padding: 0 0;
+}
+#bootstrap-overrides .navbar a{
+	margin: 0 auto;
+	padding: 0 10px;
+	line-height: 80px;
+	height: 80px;
+	/*text-align: center;*/
+	/*border: none;*/
+}
+#bootstrap-overrides .navbar-nav .navbar-nav__first-item--left{
+	padding-left: 20px;
+}
+#bootstrap-overrides .navbar-brand{
+	/*color: #fff;*/
+	font-size: 44px;
+	width: 270px;
+	text-align: center;
+	font-weight: bold;
+}
+#bootstrap-overrides .footer-brand{
+	/*color: #fff;*/
+	font-size: 20px;
+	width: 160px;
+	text-align: center;
+	font-weight: bold;
+	padding: 10px 10px;
+}
+#bootstrap-overrides .navbar-collapse a{
+	/*color: #fff;*/
+	letter-spacing: 1px;
+}
+#bootstrap-overrides .navbar-right li:last-child a{
+	text-align: center;
+	margin: 0 0;
+	padding: 0 0;
+	width: 140px;
+	border-bottom: solid 4px #f00;
+	/*padding: 50px 50px;*/
+}
+#latest-headlines{
+	/*padding: 30px 0;*/
+	margin: 0 0;
+}
+#latest-headlines h4{
+	padding: 30px 0 15px 0;
+}
+#in-the-magazine-heading{
+	padding: 15px 15px;
+	width: 20%;
+	margin: 0 auto;
+	position: relative;
+	top: 20px;
+}
+#big-shots{
+	padding: 30px 0;
+}
+#this-week-header p{
+	width: 10%;
+	margin: auto auto;
+}
+#footer-nav{
+	border-right: 1px solid;
+}
+#footer-nav-header{
+	height: 115px;
+}
+#share-sign-up{
+	/*margin: auto auto;*/
+	height: 115px;
+	border-bottom: 1px solid;
+}
+#bootstrap-overrides .social li{
+	color: #fff;
+}
+
+.sections--border--red{
+	border-top: 3px solid #f00;
+}
+.border--gray{
+	border-color: #333;
+}
+.headline--red{
+	color: #f00;
+}
+.list--red-square{
+	list-style-type: square;
+	color: #f00;
+}
+.list--blue-square{
+	list-style-type: square;
+	color: #0f0;
+}
+.list__a--black a{
+	color: #000;
+}
+#bootstrap-overrides .text--white, #bootstrap-overrides .text--white a/*, #bootstrap-overrides .text--white li*/{
+	color: #fff;
+}
+.text--gray, .text--gray a{
+	color: #666;
+}
+.text--medium{
+	font-size: 18px;	
+}
+.text--small{
+	font-size: 14px;	
+}
+.list__li--padding--border li{
+	padding: 15px 0;
+	border-bottom: solid 1px #ddd;
+}
+.list__li--style-none, .list__li--style-none ul{
+	list-style: none;
+}
+.list__li--spacing li{
+	margin: 14px 0;
+}
+#bootstrap-overrides .topic-heading--white{
+	color: #fff;
+}
+#bootstrap-overrides .topic-heading--red{
+	color: #f00;
+}
+#bootstrap-overrides .topic-heading--blue{
+	color: #0af;
+}
+#bootstrap-overrides .stories__text--center{
+	text-align: center;
+}
+.background--black{
+	background-color: #000;
+}
+.background--white{
+	background-color: #fff;
+}
+.background--red{
+	background: #f00;	
+}
+.share-sign-up--padding{
+	min-height: 100%;
+	min-height: 15vh;
+	display: flex;
+	align-items: center;
+}
+.sections--padding{
+	padding: 15px 0;
+}
+.footer__sections--padding{
+	padding: 30px 30px;
 }

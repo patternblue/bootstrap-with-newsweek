@@ -31,49 +31,52 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body id="bootstrap-overrides">
 
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top row background--black">
       <div class="container-fluid">
-        <div class="navbar-header">
+<!--         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Newsweek</a>
+          <a id="brand-logo" class="navbar-brand" href="#">Newsweek</a>
+        </div> -->
+        <div class="navbar-header background--red">
+          <a class="navbar-brand text--white" href="#">Newsweek</a>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
+        <div id="navbar" class="navbar-collapse collapse text--white">
           <ul class="nav navbar-nav">
-            <li><a href="#">U.S.</a></li>
+            <li><a class="navbar-nav__first-item--left" href="#">U.S.</a></li>
             <li><a href="#">WORLD</a></li>
             <li><a href="#">BUSINESS</a></li>
             <li><a href="#">TECH & SCIENCE</a></li>
             <li><a href="#">CULTURE</a></li>
             <li><a href="#">SPORTS</a></li>
             <li><a href="#">OPINION</a></li>
-            <li><a href="#">Search</a></li>
+            <li><a href="#">Q</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Subscribe to Newsweek</a></li>
-            <li><a href="#">Location</a></li>
+            <li><a href="#">Q</a></li>
             <li><a href="#">Sign In</a></li>
           </ul>
         </div><!--/.nav-collapse -->
-      </div>
+      </div> <!-- /container -->
     </nav>
 
     <div class="container-fluid">
 
       <!-- Main component for a primary marketing message or call to action -->
       <div class="row">
-        <div id="main-stories" class="col-lg-9">
+        <div id="main-stories" class="col-lg-9 stories__text--center">
           <img src="../../assets/img/0222apple01.jpg" class="img-responsive">
-          <h3>U.S.</h3>
+          <h3 class="topic-heading--red">U.S.</h3>
           <h1>SAN BERNARDINO VICTIMS</h1>
-          <p>
+          <p class="text--medium">
             Victims will file a legal brief in support of the U.S. government's attempt to force Apple to unlock the encrypted iPhone belonging to one of the shooters.
           </p>
           <a href="#"> Apple Store Protests Planned Over Encryption Battle</a>
@@ -89,17 +92,17 @@
 
             <div id="big-stories-details" class="row">
               <div class="col-lg-6">
-                <h4>TECH & SCIENCE</h4>
+                <h4 class="topic-heading--red">TECH & SCIENCE</h4>
                 <h2>Cancer 'Visionary' Stands Trial for Medical Malfeasance</h2>
-                <p>
+                <p class="text--medium">
                   Critics say Burzynski's cavalier attitude toward medical best practices has put the lives of thousands of patients at risk.
                 </p>
                 <a href="#"></a>
               </div>
               <div class="col-lg-6">
-                <h4>SPONSOR INSIGHT</h4>
+                <h4 class="topic-heading--red">SPONSOR INSIGHT</h4>
                 <h2>The Best Universities of Asia, Europe and the USA 2016</h2>
-                <p>
+                <p class="text--medium">
                   Universities from Asia and Europe are challenging the best schools in the USA. When it comes to choosing the right school then, the options have never been more diverse…
                 </p>
               </div>
@@ -107,9 +110,9 @@
           </div>
         </div>  <!-- /main-stories -->
 
-        <div id="latest-headlines" class="col-lg-3 sidebar">
-          <h3>LATEST HEADLINES</h3>
-          <ul>
+        <div id="latest-headlines" class="col-lg-3">
+          <h4 class="headline--red">LATEST HEADLINES</h4>
+          <ul class="list--red-square list__a--black list__li--padding--border">
             <li><a href="#">Record Number of Applicants Want to Be Astronauts</a></li>
             <li><a href="#">Artificial Intelligence Earpiece Makes 'Her' a Reality</a></li>
             <li><a href="#">U.S.-Russia Draft Calls for Syria Cease-fire Start Date</a></li>
@@ -122,8 +125,8 @@
         </div> <!-- /latest-headlines -->
       </div> <!-- /row -->
 
-      <div id="topic-stories">
-        <div id="topic-stories-covers" class="row">
+      <!-- <div id="topic-stories" class="row"> -->
+        <div id="topic-stories-covers" class="row stories__text--center">
           <div class="col-lg-3 topic-story">
             <img src="../../assets/img/0222jasondalton01.jpg" class="img-responsive">
           </div>
@@ -136,42 +139,43 @@
           <div class="col-lg-3 topic-story">
             <img src="../../assets/img/2016-02-22t051025z1167859218gf10000318282rtrmadp3cyclone-fiji.jpg" class="img-responsive">
           </div>
-        </div> <!-- /row -->
-        <div class="row topic-stories-details">
+        </div> <!-- /topic-stories -->
+
+        <div class="row topic-stories-details stories__text--center">
           <div class="col-lg-3 topic-story">
-            <h4>U.S.</h4>
-            <h2>Uber Driver Held in Deadly Michigan Shootings</h2>
-            <p>
+            <h4 class="topic-heading--red">U.S.</h4>
+            <h3>Uber Driver Held in Deadly Michigan Shootings</h3>
+            <p class="text--medium">
               Prosecutors alleged that Jason Dalton opened fire in parking lots outside an apartment building, a car dealership and at a Cracker Barrel restaurant in Kalamazoo.
             </p>
           </div>
           <div class="col-lg-3 topic-story">
-            <h4>SPONSOR INSIGHT</h4>
-            <h2>The Best Universities of Asia and the Middle East 2016</h2>
-            <p>
+            <h4 class="topic-heading--blue">SPONSOR INSIGHT</h4>
+            <h3>The Best Universities of Asia and the Middle East 2016</h3>
+            <p class="text--medium">
               Socially and culturally, the top universities in Asia and the Middle East have in recent years established themselves as genuine global powerhouses. Find out more…
             </p>
           </div>
           <div class="col-lg-3 topic-story">
-            <h4>TECH & SCIENCE</h4>
-            <h2>Forget Snail Mail: Here Comes Turtle Mail</h2>
-            <p>
+            <h4 class="topic-heading--red">TECH & SCIENCE</h4>
+            <h3>Forget Snail Mail: Here Comes Turtle Mail</h3>
+            <p class="text--medium">
               An unassuming Wi-Fi-connected mailbox for children stands out at the New York Toy Fair.
             </p>
           </div>
           <div class="col-lg-3 topic-story">
-            <h4>WORLD</h4>
-            <h2>Tropical Cyclone Winston Kills 21 in Fiji</h2>
-            <p>
+            <h4 class="topic-heading--red">WORLD</h4>
+            <h3>Tropical Cyclone Winston Kills 21 in Fiji</h3>
+            <p class="text--medium">
               Cyclone Winston was the strongest-ever storm to hit Fiji.
             </p>
           </div>
-        </div> <!-- /row -->
-      </div> <!-- /topic-stories -->
+        </div> <!-- /topic-stories-covers -->
+       <!-- /topic-stories -->
 
-      <div id="in-the-magazine-carousel">
-        <h3>IN THE MAGAZINE</h3>
-        <div class="row">
+      <div id="in-the-magazine-carousel" class="stories__text--center">
+        <h3 id="in-the-magazine-heading" class="row topic-heading--red background--white">IN THE MAGAZINE</h3>
+        <div class="row sections--border--red sections--padding">
           <div class="col-lg-3 topic-story">
             <img src="../../assets/img/0226elchapo02.jpg" class="img-responsive">
           </div>
@@ -187,58 +191,59 @@
         </div> <!-- /row -->
         <div class="row">
           <div class="col-lg-3 topic-story">
-            <h4>U.S.</h4>
-            <h2>El Chapo’s Narco Mafia</h2>
-            <p>
+            <h4 class="topic-heading--red">U.S.</h4>
+            <h3>El Chapo’s Narco Mafia</h3>
+            <p class="text--medium">
               Fiction has accustomed us to the idea of mafiosi as criminal animals, mostly uneducated. That’s never been the case.
             </p>
           </div>
           <div class="col-lg-3 topic-story">
-            <h4>WORLD</h4>
+            <h4 class="topic-heading--red">WORLD</h4>
             <h3>Will China Follow Japan Into Economic Stagnation?</h3>
-            <p>
+            <p class="text--medium">
               As Japan resorts to negative interest rates and stocks tumble, China must be worried that it’s on the same economic track.
             </p>
           </div>
           <div class="col-lg-3 topic-story">
-            <h4>U.S.</h4>
+            <h4 class="topic-heading--red">U.S.</h4>
             <h3>Unmaking a Murderer, 20 Years Later</h3>
-            <p>
+            <p class="text--medium">
               Corey Arthur is buried in prison for murder, a crime for which he says he’s responsible…but didn’t commit.
             </p>
           </div>
           <div class="col-lg-3 topic-story">
-            <h4>CULTURE</h4>
+            <h4 class="topic-heading--red">CULTURE</h4>
             <h3>'Hamilton,' a Hit on Broadway, Comes to the Classroom</h3>
-            <p>
+            <p class="text--medium">
               The hottest show of the year is changing how teachers approach American history.
             </p>
           </div>
         </div> <!-- /row -->
 
-      </div> <!-- /topic-stories -->
+      </div> 
 
-      <div id="big-shots">
-        <div class="row">
+      <div id="big-shots" class="row background--black">
           <div class="col-lg-3">
             <div id="go-to-big-shots"></div>
-            <h3>THE LATEST NEWS IN PICTURES</h3>
+            <h3 class="topic-heading--blue">THE LATEST NEWS IN PICTURES</h3>
             <button class="btn">Launch Slideshow</button>
-            <h4>Justice in Repose</h4>
-            <p>Washington, D.C.—People file past the casket of Supreme Court Justice Antonin Scalia in the Great</p>
-            <p>42 PHOTOS</p>
+            <h4 class="text--white">Justice in Repose</h4>
+            <p class="text--small text--gray">Washington, D.C.—People file past the casket of Supreme Court Justice Antonin Scalia in the Great</p>
+            <p class="text--white">42 PHOTOS</p>
           </div>
           <div class="col-lg-9">
             <img src="../../assets/img/justice-repose.jpg" id="big-shots-cover" class="img-responsive">
           </div>
-        </div>
       </div> <!-- /big-shots -->
 
 
-      <div class="row">
+      <div class="row footer__sections--padding">
         <div id="this-week" class="col-lg-9">
-          <p>THIS WEEK</p>
-          <h1>FEBRUARY 26 ISSUE</h1>
+          <div id="this-week-header" class="stories__text--center">
+            <p class="background--red text--white">THIS WEEK</p>
+            <h1>FEBRUARY 26 ISSUE</h1>
+          </div>
+
           <div class="row">
             <div id="this-week-cover" class="col-lg-6">
               <img src="../../assets/img/20160226cover1800-x-2400.jpg" class="img-responsive">
@@ -249,7 +254,7 @@
               <h2>
                 GANGSTERS ARE MOTIVATED BY MONEY; MAFIOSI ARE DRIVEN TO CONSTRUCT A SYSTEM OF POWER (IN WHICH MONEY IS ONLY ONE TOOL).
               </h2>
-              <p>
+              <p class="text--medium">
                 —AUTHOR ROBERTO SAVIANO, ON JOAQUIM GUZMAN'S RISE AND FALL AND SEAN PENN'S FAIL.
               </p>
               <h3>Inside This Issue</h3>
@@ -265,7 +270,7 @@
 
         <div id="most-read" class="col-lg-3 sidebar">
           <h3>Most Read</h3>
-          <ul>
+          <ul class="list--blue-square list__a--black list__li--padding--border">
             <li><a href="#">The GOP Is Violating the Spirit of the Constitution</a></li>
             <li><a href="#">How to Follow Voting Results in Nevada, South Carolina</a></li>
             <li><a href="#">Your Anti-Anxiety Medication Could Kill You</a></li>
@@ -276,12 +281,13 @@
         </div> <!-- /most-read -->
       </div> <!-- /row -->
 
-      <footer>
-        <div class="row">
-          <div id="footer-nav" class="col-lg-3">
-            <h2 class="footer-nav-header">Newsweek</h2>
-            <div class="copyright"></div>
-            <ul>
+      <footer class="row background--black sections--border--red">
+          <div id="footer-nav" class="col-lg-3 border--gray">
+            <div id="footer-nav-header" class="footer__sections--padding">
+              <h2 class="footer-brand background--red text--white">Newsweek</h2>
+              <div class="copyright text--gray">© 2016 NEWSWEEK LLC</div>
+            </div>
+            <ul class="text--white list__li--style-none list__li--spacing footer__sections--padding">
               <li>About Us</li>
               <li>Corrections</li>
               <li>Contact Us</li>
@@ -296,8 +302,8 @@
             </ul>
           </div>
           <div id="footer-main" class="col-lg-9">
-            <div id="share-sign-up" class="row">
-              <div class="col-lg-6">
+            <div id="share-sign-up" class="row border--gray">
+              <div class="col-lg-6 share-sign-up--padding footer__sections--padding">
                 <ul class="nav navbar-nav social">
                   <li><a href="#"><i class="fa fa-lg fa-facebook"></i></a></li>
                   <li><a href="#"><i class="fa fa-lg fa-twitter"></i></a></li>
@@ -306,15 +312,15 @@
                   <li><a href="#"><i class="fa fa-lg fa-instagram"></i></a></li>
                 </ul>
               </div>
-              <div class="col-lg-6">
+              <div class="col-lg-6  share-sign-up--padding footer__sections--padding">
                 <form id="sign-up" class="form-inline">
                       <input type="email" class="form-control" placeholder="Enter Your Email">
                       <button type="submit" class="btn btn-default">Sign Up</button>
                 </form>
               </div>
             </div>
-            <div id="recent-issues">
-              <h2></h2>
+            <div id="recent-issues" class="footer__sections--padding">
+              <h2 class="topic-heading--white">Recent Issues</h2>
               <div id="recent-issues-covers" class="row">
                 <div class="col-lg-3">
                   <img src="../../assets/img/20160219cover1800-x-2400.jpg" class="img-responsive">
@@ -330,9 +336,9 @@
                   <img src="../../assets/img/20160129cover1800-x-2400.jpg" class="img-responsive">
                 </div>
               </div>
-              <div id="recent-issues-details" class="row">
+              <div id="recent-issues-details" class="row list__li--spacing text--gray list__li--style-none">
                 <div class="col-lg-3">
-                  <h3>February 19 Issue</h3>
+                  <h3 class="topic-heading--white">February 19 Issue</h3>
                   <ul>
                     <li><a href="#">Unmaking a Murderer, 20 Years Later</a></li>
                     <li><a href="#">'Hamilton,' a Hit on Broadway, Comes to the Classroom</a></li>
@@ -340,7 +346,7 @@
                   </ul>
                 </div>
                 <div class="col-lg-3">
-                  <h3>February 12 Issue</h3>
+                  <h3 class="topic-heading--white">February 12 Issue</h3>
                   <ul>
                     <li><a href="#">Right-Wing Extremists Are More Threatening Than ISIS</a></li>
                     <li><a href="#">Mosquito Trap Uses Human Scent as Bait</a></li>
@@ -348,7 +354,7 @@
                   </ul>
                 </div>
                 <div class="col-lg-3">
-                  <h3>February 05 Issue</h3>
+                  <h3 class="topic-heading--white">February 05 Issue</h3>
                   <ul>
                     <li><a href="#">South Florida Is Sinking. Where Is Marco Rubio?</a></li>
                     <li><a href="#">The Valiant Return of Vermouth</a></li>
@@ -356,7 +362,7 @@
                   </ul>
                 </div>
                 <div class="col-lg-3">
-                  <h3>January 29 Issue</h3>
+                  <h3 class="topic-heading--white">January 29 Issue</h3>
                   <ul>
                     <li><a href="#">The Lying, Scheming Altar Boy Behind a Lurid Rape Case</a></li>
                     <li><a href="#">Oil and Trouble in China</a></li>
@@ -367,7 +373,6 @@
             </div> <!-- /recent-issues -->
             <button class="btn">Browse Archives</button>
           </div> <!-- /footer-main -->
-        </div> <!-- /row -->
       </footer>
     </div> <!-- /container -->
 
