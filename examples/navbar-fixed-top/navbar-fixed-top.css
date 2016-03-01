@@ -1,17 +1,16 @@
 
+/*misc*/
 body {
   min-height: 2000px;
   padding-top: 70px;
   background: #fff;
-  /*color: #222;*/
 }
-/*misc*/
 *{
 	/*border: 1px dotted red !important;*/
 }
 
+/*navbar*/
 .navbar-header{
-	/*background: #f00;*/
 	margin: 0 0;
 	padding: 0 0;
 }
@@ -20,29 +19,17 @@ body {
 	padding: 0 10px;
 	line-height: 80px;
 	height: 80px;
-	/*text-align: center;*/
-	/*border: none;*/
 }
 #bootstrap-overrides .navbar-nav .navbar-nav__first-item--left{
 	padding-left: 20px;
 }
 #bootstrap-overrides .navbar-brand{
-	/*color: #fff;*/
 	font-size: 44px;
 	width: 270px;
 	text-align: center;
 	font-weight: bold;
 }
-#bootstrap-overrides .footer-brand{
-	/*color: #fff;*/
-	font-size: 20px;
-	width: 160px;
-	text-align: center;
-	font-weight: bold;
-	padding: 10px 10px;
-}
 #bootstrap-overrides .navbar-collapse a{
-	/*color: #fff;*/
 	letter-spacing: 1px;
 }
 #bootstrap-overrides .navbar-right li:last-child a{
@@ -51,15 +38,17 @@ body {
 	padding: 0 0;
 	width: 140px;
 	border-bottom: solid 4px #f00;
-	/*padding: 50px 50px;*/
 }
+
+/*latest-headlines sidebar*/
 #latest-headlines{
-	/*padding: 30px 0;*/
 	margin: 0 0;
 }
 #latest-headlines h4{
 	padding: 30px 0 15px 0;
 }
+
+/*in-the-magazine section*/
 #in-the-magazine-heading{
 	padding: 15px 15px;
 	width: 20%;
@@ -67,12 +56,25 @@ body {
 	position: relative;
 	top: 20px;
 }
+
+/*big-shots section*/
 #big-shots{
 	padding: 30px 0;
 }
+
+/*this-week section*/
 #this-week-header p{
-	width: 10%;
+	width: 100px;
 	margin: auto auto;
+}
+
+/*footer section*/
+#bootstrap-overrides .footer-brand{
+	font-size: 20px;
+	width: 160px;
+	text-align: center;
+	font-weight: bold;
+	padding: 10px 10px;
 }
 #footer-nav{
 	border-right: 1px solid;
@@ -81,23 +83,82 @@ body {
 	height: 115px;
 }
 #share-sign-up{
-	/*margin: auto auto;*/
 	height: 115px;
 	border-bottom: 1px solid;
+	position: relative;
 }
 #bootstrap-overrides .social li{
 	color: #fff;
 }
+.recent-issue:first-child h3{
+	position: relative;
+}
+#subscribe-latest{
+	position: absolute;
+	top: -35px;
+	color: #000;
+	background-color: yellow;
+}
 
+/*class stylings*/
+
+/*img*/
+#bootstrap-overrides .img-responsive{
+	width: 100%;
+}
+
+/*positioning, alignment, dimensions*/
+.height--100{
+	height: 100%;
+}
+#bootstrap-overrides .center-verticle{
+	/*add position relative to parent div*/
+	display: table; 
+    margin: auto;
+    position: absolute;
+    top: 0; 
+    bottom: 0; 
+}
+#bootstrap-overrides .stories__text--center{
+	text-align: center;
+}
+
+/*borders*/
 .sections--border--red{
 	border-top: 3px solid #f00;
 }
 .border--gray{
 	border-color: #333;
 }
+
+/*text colors*/
 .headline--red{
 	color: #f00;
 }
+#bootstrap-overrides .text--white, #bootstrap-overrides .text--white a{
+	color: #fff;
+}
+.text--gray, .text--gray a{
+	color: #666;
+}
+#bootstrap-overrides .topic-heading--white{
+	color: #fff;
+}
+#bootstrap-overrides .topic-heading--red{
+	color: #f00;
+}
+#bootstrap-overrides .topic-heading--blue{
+	color: #0af;
+}
+/*text sizes*/
+.text--medium{
+	font-size: 18px;	
+}
+.text--small{
+	font-size: 14px;	
+}
+
+/*list stylings*/
 .list--red-square{
 	list-style-type: square;
 	color: #f00;
@@ -109,18 +170,6 @@ body {
 .list__a--black a{
 	color: #000;
 }
-#bootstrap-overrides .text--white, #bootstrap-overrides .text--white a/*, #bootstrap-overrides .text--white li*/{
-	color: #fff;
-}
-.text--gray, .text--gray a{
-	color: #666;
-}
-.text--medium{
-	font-size: 18px;	
-}
-.text--small{
-	font-size: 14px;	
-}
 .list__li--padding--border li{
 	padding: 15px 0;
 	border-bottom: solid 1px #ddd;
@@ -131,20 +180,10 @@ body {
 .list__li--spacing li{
 	margin: 14px 0;
 }
-#bootstrap-overrides .topic-heading--white{
-	color: #fff;
-}
-#bootstrap-overrides .topic-heading--red{
-	color: #f00;
-}
-#bootstrap-overrides .topic-heading--blue{
-	color: #0af;
-}
-#bootstrap-overrides .stories__text--center{
-	text-align: center;
-}
+
+/*background colors*/
 .background--black{
-	background-color: #000;
+	background-color: #111;
 }
 .background--white{
 	background-color: #fff;
@@ -152,12 +191,8 @@ body {
 .background--red{
 	background: #f00;	
 }
-.share-sign-up--padding{
-	min-height: 100%;
-	min-height: 15vh;
-	display: flex;
-	align-items: center;
-}
+
+/*paddings*/
 .sections--padding{
 	padding: 15px 0;
 }
